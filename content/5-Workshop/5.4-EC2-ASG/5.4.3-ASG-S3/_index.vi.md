@@ -16,7 +16,7 @@ pre: " <b> 5.4.3 </b> "
 
 Truy cập **EC2** → **Auto Scaling Groups** → **Create Auto Scaling group**.
 
-![Hình 8 - Tạo Auto Scaling Group](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img8.png)
+![Hình 5 - Tạo Auto Scaling Group](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img5.png)
 
 Cấu hình ASG:
 
@@ -32,10 +32,6 @@ Cấu hình ASG:
 
 #### Bước 2: Cấu hình Warm Pool
 
-Sau khi tạo ASG, chọn **Instance management** → **Warm pool** → **Create warm pool**.
-
-![Hình 9 - Tạo Warm Pool](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img9.png)
-
 Cấu hình Warm Pool:
 
 | Trường | Giá trị |
@@ -44,8 +40,6 @@ Cấu hình Warm Pool:
 | Min size | 1 |
 | Max prepared capacity | Auto |
 
-![Hình 10 - Cấu hình Warm Pool](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img10.png)
-
 **Lưu ý:** Warm Pool với trạng thái **Stopped** giúp tiết kiệm chi phí trong khi vẫn đảm bảo instance sẵn sàng khởi động nhanh khi cần.
 
 ---
@@ -53,8 +47,6 @@ Cấu hình Warm Pool:
 #### Bước 3: Tạo S3 Bucket
 
 Truy cập **S3** → **Create bucket**.
-
-![Hình 11 - Tạo S3 Bucket](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img11.png)
 
 Cấu hình Bucket:
 
@@ -70,7 +62,7 @@ Cấu hình Bucket:
 
 Chọn Bucket → **Properties** → **Static website hosting** → **Edit**.
 
-![Hình 12 - Static Website Hosting](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img12.png)
+![Hình 6 - Static Website Hosting](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img6.png)
 
 | Trường | Giá trị |
 |--------|---------|
@@ -99,7 +91,7 @@ Chọn **Permissions** → **Bucket policy** → **Edit**, dán policy sau:
 }
 ```
 
-![Hình 13 - Bucket Policy](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img13.png)
+![Hình 7 - Bucket Policy](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img7.png)
 
 ---
 
@@ -118,9 +110,7 @@ Chọn **Permissions** → **Cross-origin resource sharing (CORS)** → **Edit**
 ]
 ```
 
-![Hình 14 - CORS Configuration](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img14.png)
-
-![Hình 15 - S3 Bucket hoàn tất](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img15.png)
+![Hình 8 - CORS Configuration](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img8.png)
 
 Ghi lại **Website endpoint URL** để cấu hình CloudFront (nếu cần) hoặc truy cập trực tiếp.
 

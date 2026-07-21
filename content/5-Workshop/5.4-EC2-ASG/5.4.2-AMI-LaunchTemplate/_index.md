@@ -30,8 +30,6 @@ Before creating the AMI, add tags to the EC2 instance for better management:
 
 Select the `FightingGameServer` EC2 instance → **Actions** → **Image and templates** → **Create image**.
 
-![Figure 2 - Create AMI from instance](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img2.png)
-
 Fill in the AMI information:
 
 | Field | Value |
@@ -40,9 +38,9 @@ Fill in the AMI information:
 | Image description | Game server with Node.js and PM2 pre-installed |
 | No reboot | ✅ Enabled (to avoid restarting the instance) |
 
-![Figure 3 - Configure AMI](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img3.png)
-
 Select **Create image** → Wait for the AMI status to change to `available`.
+
+![Figure 2 - AMI completed](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img2.png)
 
 **Note:** The AMI creation process may take 5-10 minutes. Check the status at **EC2 → AMIs**.
 
@@ -51,8 +49,6 @@ Select **Create image** → Wait for the AMI status to change to `available`.
 #### Step 3: Create Launch Template (Spot)
 
 Go to **EC2** → **Launch Templates** → **Create launch template**.
-
-![Figure 4 - Create Launch Template](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img4.png)
 
 Configure the Launch Template:
 
@@ -69,15 +65,13 @@ Configure the Launch Template:
 
 In **Advanced details** → **Purchasing option**: Select **Request Spot instances**.
 
-![Figure 5 - Spot instance configuration in Launch Template](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img5.png)
-
 ---
 
 #### Step 4: Configure IAM for MatchMaker
 
 Create an IAM Instance Profile so EC2 can access DynamoDB and other AWS services:
 
-![Figure 6 - Configure IAM Role for MatchMaker](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img6.png)
+![Figure 3 - Configure IAM Role for MatchMaker](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img3.png)
 
 Attach the IAM Instance Profile to the Launch Template:
 
@@ -85,7 +79,7 @@ Attach the IAM Instance Profile to the Launch Template:
 |-------|-------|
 | IAM instance profile | `FightingGameServerInstanceRole` |
 
-![Figure 7 - Launch Template completed](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img7.png)
+![Figure 4 - Launch Template completed](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img4.png)
 
 Select **Create launch template** to finish.
 

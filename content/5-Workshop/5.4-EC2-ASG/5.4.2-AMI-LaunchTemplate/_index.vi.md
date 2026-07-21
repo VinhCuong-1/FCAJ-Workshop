@@ -30,8 +30,6 @@ Trước khi tạo AMI, thêm tags vào EC2 instance để dễ quản lý:
 
 Chọn EC2 instance `FightingGameServer` → **Actions** → **Image and templates** → **Create image**.
 
-![Hình 2 - Tạo AMI từ instance](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img2.png)
-
 Điền thông tin AMI:
 
 | Trường | Giá trị |
@@ -40,9 +38,9 @@ Chọn EC2 instance `FightingGameServer` → **Actions** → **Image and templat
 | Image description | Game server with Node.js and PM2 pre-installed |
 | No reboot | ✅ Bật (để không restart instance) |
 
-![Hình 3 - Cấu hình AMI](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img3.png)
-
 Chọn **Create image** → Đợi AMI chuyển trạng thái sang `available`.
+
+![Hình 2 - AMI hoàn tất](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img2.png)
 
 **Lưu ý:** Quá trình tạo AMI có thể mất 5-10 phút. Kiểm tra trạng thái tại **EC2 → AMIs**.
 
@@ -51,8 +49,6 @@ Chọn **Create image** → Đợi AMI chuyển trạng thái sang `available`.
 #### Bước 3: Tạo Launch Template (Spot)
 
 Truy cập **EC2** → **Launch Templates** → **Create launch template**.
-
-![Hình 4 - Tạo Launch Template](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img4.png)
 
 Cấu hình Launch Template:
 
@@ -69,15 +65,13 @@ Cấu hình Launch Template:
 
 Trong phần **Advanced details** → **Purchasing option**: Chọn **Request Spot instances**.
 
-![Hình 5 - Cấu hình Spot instance trong Launch Template](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img5.png)
-
 ---
 
 #### Bước 4: Cấu hình IAM cho MatchMaker
 
 Tạo IAM Instance Profile để EC2 có thể truy cập DynamoDB và các dịch vụ AWS:
 
-![Hình 6 - Cấu hình IAM Role cho MatchMaker](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img6.png)
+![Hình 3 - Cấu hình IAM Role cho MatchMaker](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img3.png)
 
 Gắn IAM Instance Profile vào Launch Template:
 
@@ -85,7 +79,7 @@ Gắn IAM Instance Profile vào Launch Template:
 |--------|---------|
 | IAM instance profile | `FightingGameServerInstanceRole` |
 
-![Hình 7 - Launch Template hoàn tất](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img7.png)
+![Hình 4 - Launch Template hoàn tất](/images/5-Workshop/5.4-EC2-ASG/5.4.2/img4.png)
 
 Chọn **Create launch template** để hoàn tất.
 
