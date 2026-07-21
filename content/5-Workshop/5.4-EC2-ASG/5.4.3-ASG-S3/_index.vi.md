@@ -3,7 +3,7 @@ title: "Cấu hình ASG Warm Pool & S3 Bucket"
 date: 2026-05-04
 weight: 3
 chapter: false
-pre: " <b> 5.4.3. </b> "
+pre: " <b> 5.4.3 </b> "
 ---
 
 ### Cấu hình ASG Warm Pool & S3 Bucket
@@ -16,7 +16,7 @@ pre: " <b> 5.4.3. </b> "
 
 Truy cập **EC2** → **Auto Scaling Groups** → **Create Auto Scaling group**.
 
-![Hình 8 - Tạo Auto Scaling Group](/images/5-Workshop/5.4-EC2-ASG/5.4.3/asg-overview.png)
+![Hình 8 - Tạo Auto Scaling Group](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img8.png)
 
 Cấu hình ASG:
 
@@ -34,7 +34,7 @@ Cấu hình ASG:
 
 Sau khi tạo ASG, chọn **Instance management** → **Warm pool** → **Create warm pool**.
 
-
+![Hình 9 - Tạo Warm Pool](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img9.png)
 
 Cấu hình Warm Pool:
 
@@ -44,7 +44,7 @@ Cấu hình Warm Pool:
 | Min size | 1 |
 | Max prepared capacity | Auto |
 
-
+![Hình 10 - Cấu hình Warm Pool](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img10.png)
 
 **Lưu ý:** Warm Pool với trạng thái **Stopped** giúp tiết kiệm chi phí trong khi vẫn đảm bảo instance sẵn sàng khởi động nhanh khi cần.
 
@@ -54,7 +54,7 @@ Cấu hình Warm Pool:
 
 Truy cập **S3** → **Create bucket**.
 
-
+![Hình 11 - Tạo S3 Bucket](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img11.png)
 
 Cấu hình Bucket:
 
@@ -70,7 +70,7 @@ Cấu hình Bucket:
 
 Chọn Bucket → **Properties** → **Static website hosting** → **Edit**.
 
-![Hình 12 - Static Website Hosting](/images/5-Workshop/5.4-EC2-ASG/5.4.3/s3-static-hosting.png)
+![Hình 12 - Static Website Hosting](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img12.png)
 
 | Trường | Giá trị |
 |--------|---------|
@@ -99,7 +99,7 @@ Chọn **Permissions** → **Bucket policy** → **Edit**, dán policy sau:
 }
 ```
 
-![Hình 13 - Bucket Policy](/images/5-Workshop/5.4-EC2-ASG/5.4.3/s3-bucket-policy.png)
+![Hình 13 - Bucket Policy](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img13.png)
 
 ---
 
@@ -118,8 +118,9 @@ Chọn **Permissions** → **Cross-origin resource sharing (CORS)** → **Edit**
 ]
 ```
 
-![Hình 14 - CORS Configuration](/images/5-Workshop/5.4-EC2-ASG/5.4.3/s3-cors.png)
+![Hình 14 - CORS Configuration](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img14.png)
 
+![Hình 15 - S3 Bucket hoàn tất](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img15.png)
 
 Ghi lại **Website endpoint URL** để cấu hình CloudFront (nếu cần) hoặc truy cập trực tiếp.
 

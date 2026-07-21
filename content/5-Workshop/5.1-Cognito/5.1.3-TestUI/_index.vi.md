@@ -30,11 +30,7 @@ Sau khi đăng nhập thành công, người chơi được chuyển sang màn h
 
 ![Hình 101 - Giao diện tìm trận](/images/5-Workshop/5.1-Cognito/5.1.3/img101.png)
 
-#### Giao diện Trong trận
 
-Khi đã ghép trận thành công, giao diện game bắt đầu.
-
-![Hình 102 - Giao diện trong trận](/images/5-Workshop/5.1-Cognito/5.1.3/img102.png)
 
 **Kết quả:** Luồng xác thực hoạt động hoàn chỉnh — từ đăng ký → đăng nhập → matchmaking → vào trận.
 

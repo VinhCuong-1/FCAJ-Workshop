@@ -36,16 +36,10 @@ sudo systemctl status codedeploy-agent
 
 **Note:** This script must be applied to both **Warm instances** and **Spot instances** in the Launch Template (add to User Data) so new instances automatically have the CodeDeploy Agent on boot.
 
-#### Result After Installation
+#### Results after installation
 
 ![Figure 1](/images/5-Workshop/5.5-CICD/5.5.2/img21.png)
-![Figure 2](/images/5-Workshop/5.5-CICD/5.5.2/img22.png)
-![Figure 3](/images/5-Workshop/5.5-CICD/5.5.2/img23.png)
 
 #### Update Launch Template with CodeDeploy Agent
 
-After successful installation on the current instance, update the Launch Template so all new instances in the Warm Pool and Spot Fleet automatically have the agent.
-
-![Figure 4](/images/5-Workshop/5.5-CICD/5.5.2/img24.png)
-![Figure 7](/images/5-Workshop/5.5-CICD/5.5.2/img27.png)
-
+After successful installation on the current instance, update the Launch Template so that all new instances in Warm Pool and Spot Fleet automatically have the agent.

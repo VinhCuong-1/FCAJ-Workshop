@@ -39,15 +39,8 @@ sudo systemctl status codedeploy-agent
 #### Kết quả sau khi cài đặt
 
 ![Hình 1](/images/5-Workshop/5.5-CICD/5.5.2/img21.png)
-![Hình 2](/images/5-Workshop/5.5-CICD/5.5.2/img22.png)
-![Hình 3](/images/5-Workshop/5.5-CICD/5.5.2/img23.png)
 
 #### Cập nhật Launch Template với CodeDeploy Agent
 
 Sau khi cài đặt thành công trên instance hiện tại, cập nhật Launch Template để tất cả instance mới trong Warm Pool và Spot Fleet tự động có agent.
-
-![Hình 4](/images/5-Workshop/5.5-CICD/5.5.2/img24.png)
-![Hình 5](/images/5-Workshop/5.5-CICD/5.5.2/img25.png)
-![Hình 6](/images/5-Workshop/5.5-CICD/5.5.2/img26.png)
-![Hình 7](/images/5-Workshop/5.5-CICD/5.5.2/img27.png)
 

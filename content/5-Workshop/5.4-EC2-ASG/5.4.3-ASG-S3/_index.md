@@ -3,7 +3,7 @@ title: "Configure ASG Warm Pool & S3 Bucket"
 date: 2026-05-04
 weight: 3
 chapter: false
-pre: " <b> 5.4.3. </b> "
+pre: " <b> 5.4.3 </b> "
 ---
 
 ### Configure ASG Warm Pool & S3 Bucket
@@ -16,7 +16,7 @@ pre: " <b> 5.4.3. </b> "
 
 Go to **EC2** → **Auto Scaling Groups** → **Create Auto Scaling group**.
 
-![Figure 8 - Create Auto Scaling Group](/images/5-Workshop/5.4-EC2-ASG/5.4.3/asg-overview.png)
+![Figure 8 - Create Auto Scaling Group](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img8.png)
 
 Configure the ASG:
 
@@ -34,7 +34,7 @@ Configure the ASG:
 
 After creating the ASG, select **Instance management** → **Warm pool** → **Create warm pool**.
 
-
+![Figure 9 - Create Warm Pool](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img9.png)
 
 Configure the Warm Pool:
 
@@ -44,7 +44,7 @@ Configure the Warm Pool:
 | Min size | 1 |
 | Max prepared capacity | Auto |
 
-
+![Figure 10 - Warm Pool configuration](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img10.png)
 
 **Note:** A Warm Pool with **Stopped** state helps save costs while ensuring instances can start quickly when needed.
 
@@ -54,7 +54,7 @@ Configure the Warm Pool:
 
 Go to **S3** → **Create bucket**.
 
-
+![Figure 11 - Create S3 Bucket](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img11.png)
 
 Configure the Bucket:
 
@@ -70,7 +70,7 @@ Configure the Bucket:
 
 Select the Bucket → **Properties** → **Static website hosting** → **Edit**.
 
-![Figure 12 - Static Website Hosting](/images/5-Workshop/5.4-EC2-ASG/5.4.3/s3-static-hosting.png)
+![Figure 12 - Static Website Hosting](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img12.png)
 
 | Field | Value |
 |-------|-------|
@@ -99,7 +99,7 @@ Select **Permissions** → **Bucket policy** → **Edit**, paste the following p
 }
 ```
 
-![Figure 13 - Bucket Policy](/images/5-Workshop/5.4-EC2-ASG/5.4.3/s3-bucket-policy.png)
+![Figure 13 - Bucket Policy](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img13.png)
 
 ---
 
@@ -118,8 +118,9 @@ Select **Permissions** → **Cross-origin resource sharing (CORS)** → **Edit**
 ]
 ```
 
-![Figure 14 - CORS Configuration](/images/5-Workshop/5.4-EC2-ASG/5.4.3/s3-cors.png)
+![Figure 14 - CORS Configuration](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img14.png)
 
+![Figure 15 - S3 Bucket completed](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img15.png)
 
 Note down the **Website endpoint URL** to configure CloudFront (if needed) or for direct access.
 

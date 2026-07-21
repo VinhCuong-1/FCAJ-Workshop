@@ -30,11 +30,7 @@ After successful login, the player is taken to the matchmaking screen.
 
 ![Figure 101 - Matchmaking interface](/images/5-Workshop/5.1-Cognito/5.1.3/img101.png)
 
-#### In-Match Interface
 
-When a match is successfully found, the game interface begins.
-
-![Figure 102 - In-match interface](/images/5-Workshop/5.1-Cognito/5.1.3/img102.png)
 
 **Result:** The authentication flow works completely - from registration → login → matchmaking → entering the match.
 
