@@ -120,7 +120,6 @@ Chọn **Permissions** → **Cross-origin resource sharing (CORS)** → **Edit**
 
 ![Hình 14 - CORS Configuration](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img14.png)
 
-![Hình 15 - S3 Bucket hoàn tất](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img15.png)
 
 Ghi lại **Website endpoint URL** để cấu hình CloudFront (nếu cần) hoặc truy cập trực tiếp.
 

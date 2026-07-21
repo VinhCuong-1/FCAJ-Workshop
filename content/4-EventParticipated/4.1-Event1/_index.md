@@ -19,14 +19,14 @@ The main content went through six sharing sessions, ranging from AI and Cloud to
 
 ### List of speakers
 
-- **Quynh Mai**: Program MC.
-- **Nguyen Gia Hung**: Head of Solution Architect at AWS Vietnam, Founder of FCAJ.
-- **Mr. Tinh**: Platform Engineer at Gotam X.
-- **Ms. Hai Anh**: Working at Pacific Vietnam (Previously presented at AWS Singapore Summit, Silicon Valley).
-- **Mr. Thinh**: DevOps Engineer.
-- **UTM Team**: Developers (sharing about their Hackathon project).
-- **Mr. Duc**: Shared technical insights on Large Language Models (LLM Optimization).
-- **Ms. Vy**: Working at VPBank, shared about the Enterprise Multi-agent system.
+- **Quynh Mai**: Program MC
+- **Nguyen Gia Hung**: Head of Solution Architect at AWS Vietnam, Founder of FCAJ
+- **Mr. Tinh**: Platform Engineer at Gotam X
+- **Ms. Hai Anh**: Working at Pacific Vietnam (Previously presented at AWS Singapore Summit, Silicon Valley)
+- **Mr. Thinh**: DevOps Engineer
+- **UTM Team**: Developers (sharing about their Hackathon project)
+- **Mr. Duc**: Shared technical insights on Large Language Models (LLM Optimization)
+- **Ms. Vy**: Working at VPBank, shared about the Enterprise Multi-agent system
 
 ### Key highlights
 The common thread of all six sessions was not shying away from issues currently causing real headaches for the industry. The IT industry in general is quite bewildered by the rapid development of AI, while many engineers are still used to using prompts without context and get surprised when AI gives completely wrong answers, also known as "hallucinations". Besides that is the problem of managing Cloud costs when there is an abnormal bill spike, the fact that LLMs return different results even when the temperature is fixed at 0, and the story of lacking financial report data when credit scoring for startup businesses.

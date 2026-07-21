@@ -117,7 +117,7 @@ pm2 save
 
 ---
 
-#### Bước 5: Kiểm tra kết nối
+#### Bước 5: Kiểm tra kết nối (Test thử trên local)
 
 Mở trình duyệt hoặc dùng `curl` để kiểm tra game server đang hoạt động:
 

@@ -117,7 +117,7 @@ pm2 save
 
 ---
 
-#### Step 5: Test Connection
+#### Step 5: Test Connection (On local)
 
 Open a browser or use `curl` to verify the game server is running:
 

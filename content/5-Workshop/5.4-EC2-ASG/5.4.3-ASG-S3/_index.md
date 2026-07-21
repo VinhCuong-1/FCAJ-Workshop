@@ -120,7 +120,6 @@ Select **Permissions** → **Cross-origin resource sharing (CORS)** → **Edit**
 
 ![Figure 14 - CORS Configuration](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img14.png)
 
-![Figure 15 - S3 Bucket completed](/images/5-Workshop/5.4-EC2-ASG/5.4.3/img15.png)
 
 Note down the **Website endpoint URL** to configure CloudFront (if needed) or for direct access.
 
