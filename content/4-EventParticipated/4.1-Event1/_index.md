@@ -1,0 +1,76 @@
+---
+title: "Event 1"
+date: 2026-05-04
+weight: 1
+chapter: false
+pre: " <b> 4.1. </b> "
+---
+
+# 05-23-2026 | FCAJ Community Day
+
+**Time:** The event took place on the morning of May 23, 2026.  
+**Location:** 26th Floor, Bitexco Financial Tower, No. 02 Hai Trieu Street, Sai Gon Ward, Ho Chi Minh City.  
+**Organizer:** FCAJ Community (AWS Study Group).
+
+### Purpose of the event
+The organizing committee did not frame the event as a pure seminar where you just sit and listen. Right from the start, the general spirit was to encourage everyone to proactively strike up conversations, treating this as an opportunity to connect and find new friends or partners, rather than just attending and leaving.
+
+The main content went through six sharing sessions, ranging from AI and Cloud to real-world stories from industry professionals. The focus revolved around how to adapt to the changing labor market in the AI era, AWS architecture with CloudFront and Amazon Q, how to write prompts with context instead of asking general questions, the probabilistic nature of LLMs, Hackathon experiences, and how to design an enterprise-grade Multi-Agent system. The greatest value the event brought, in my opinion, was the practical perspective from people directly working on projects, helping attendees understand how to operate a system that is secure, reliable, and meets user needs, rather than just theoretical knowledge.
+
+### List of speakers
+
+- **Quynh Mai**: Program MC.
+- **Nguyen Gia Hung**: Head of Solution Architect at AWS Vietnam, Founder of FCAJ.
+- **Mr. Tinh**: Platform Engineer at Gotam X.
+- **Ms. Hai Anh**: Working at Pacific Vietnam (Previously presented at AWS Singapore Summit, Silicon Valley).
+- **Mr. Thinh**: DevOps Engineer.
+- **UTM Team**: Developers (sharing about their Hackathon project).
+- **Mr. Duc**: Shared technical insights on Large Language Models (LLM Optimization).
+- **Ms. Vy**: Working at VPBank, shared about the Enterprise Multi-agent system.
+
+### Key highlights
+The common thread of all six sessions was not shying away from issues currently causing real headaches for the industry. The IT industry in general is quite bewildered by the rapid development of AI, while many engineers are still used to using prompts without context and get surprised when AI gives completely wrong answers, also known as "hallucinations". Besides that is the problem of managing Cloud costs when there is an abnormal bill spike, the fact that LLMs return different results even when the temperature is fixed at 0, and the story of lacking financial report data when credit scoring for startup businesses.
+
+Regarding solutions, the speakers all emphasized one common point: you should build a real product to score points, instead of just making a demo project for the sake of it. If you want AI to answer correctly, you must give it the specific context of the enterprise instead of general knowledge. Regarding costs, you can use CloudFront's Flat-rate pricing mechanism to both optimize costs and prevent DDoS. As for complex problems, instead of forcing one AI to do everything, it should be broken down into a Multi-agent system, with each agent in charge of a specific expertise.
+
+Regarding the technologies mentioned, on the AWS side, there are Amazon Q (QuickSight) and Amazon CloudFront with protection layers like OAC, Shield, and WAF. On the AI side, there are CrewAI, Bedrock Agent Core, LLM parameters like Temperature, Logits, Soft max, Arg max, and the Model Context Protocol (MCP). Regarding infrastructure, Terraform was mentioned as the main tool for Infrastructure as Code.
+
+The demo and case study part is probably the part I will remember the longest. Mr. Hung demoed Amazon Q directly importing an Excel business report file and automatically generating an analysis dashboard. The UTM team recounted the process of making "UTM Morpo" for the Hackathon competition, an application that automatically generates interfaces from images and allows drag-and-drop, editing code immediately. There was a demo hosting two LLM models in parallel, one running on AWS Bedrock, one running Locally, both with temperature set to 0 to compare whether the results are truly consistent as theory says. Ms. Vy talked about building a Multi-agent system to evaluate startup credit at the bank where she works.
+
+One detail that made the whole hall laugh but also nod in agreement was the "Internet Builder disease", meaning the habit of seeing any tool, rule, or code snippet online and pulling it in to use without considering if it suits the company's project. Ms. Vy also shared about the strict security level in the bank: if anyone arbitrarily installs MCP, the Security team is ready to confiscate their machine on the spot.
+
+### What I learned
+Regarding mindset, I drew a fairly clear conclusion: AI does not replace humans, but it is creating a new workflow, specifically the job of "fixing" and maintaining products generated by AI itself. When designing any system, you must answer four questions: who uses it, what do they use, why do they use it, and when do they use it, instead of making it first and then looking for users.
+
+Regarding technical knowledge, I better understood the concept of Platform Engineer, meaning a person who creates an internal developer platform (IDP) so other developers can self-provision resources without waiting for manual approval. I also grasped the reason why LLM results are never absolutely identical, stemming from the infrastructure cost optimization mechanism, called inference optimization, applied by model providers.
+
+Regarding best practices, instead of cramming as many documents as possible into AI, it should be distilled into "knowledge transfer" from industry experts themselves. Rotating security keys, meaning rotating API Keys or IAM Access Keys periodically, was also repeatedly mentioned as a mandatory habit rather than an option, because negligence here can cost billions. Another good idea is to have a dedicated Agent solely tasked with checking and cross-referencing the results of other AIs, instead of trusting a single source absolutely.
+
+Regarding practical experience, the speakers frankly warned that copy-pasting code from AI without understanding the company's coding standards can easily cause serious bugs right on production. And there is one thing I find important to remember: when someone relies on AI results to make a decision, that person must take full legal responsibility if wrong, they cannot blame the AI back.
+
+### Application to work
+With my current job, I think I can immediately apply rewriting prompts to closely align with the team's domain and actual processes, instead of asking generally and being disappointed with vague answers. A small but useful thing is to adjust the temperature to about 0.1 instead of leaving it absolute 0, because leaving it at 0 sometimes causes the LLM to repeat vocabulary mechanically.
+
+Regarding technologies I want to try, I am interested in using Terraform to manage infrastructure by code instead of clicking manually on the console, because this way makes future rollback or scaling much easier. I also want to try Amazon Q in the role of an assistant summarizing meetings and automatically sending them via Teams or Email.
+
+Regarding improving the workflow, the idea of building a Multi-Agent system divided by tasks, for example one agent for research, one agent for risk assessment, one agent specifically for reviewing, is something I want to learn more about. Along with that is the habit of making an ROI (Return on Investment) assessment before proposing any AI project to superiors, instead of just presenting the idea.
+
+### Experience at the event
+The thing I learned the most from the speakers was the very "battle-tested" advice, coming from people directly operating large systems, helping me clearly see the gap between doing school projects and making real products for enterprises. The visual practical part also left an impression, especially creating a dashboard by voice or generating a web layout from a wireframe and editing it on the spot.
+
+The networking atmosphere was quite comfortable, the speakers were friendly and encouraged everyone to boldly raise their hands to answer, both to accumulate plus points for their CVs and to have the chance to receive AWS credits. The thing that impressed me the most was the quite frank sharing that employers nowadays look at real products much more than scores on transcripts, along with the true story about copying code from ChatGPT causing an incident at VPBank.
+
+### Lessons learned
+The biggest lesson I brought back is that the software engineering foundation is the true core factor that helps an AI model run safely and scale on production, not just knowing how to call APIs. Degrees and old foundational skills are still important, at least to pass the first resume screening round.
+
+A quote I'll remember forever is "garbage in, garbage out": if the data fed in is garbage, the result AI returns is also just garbage, no matter how powerful the model is. And when there are too many ideas at once, the best way is not to embrace them all, but to cut them down, focusing on completing a single core feature flow to ensure on-time delivery.
+
+Regarding my upcoming orientation, I want to improve my mindset on applying AI into practical work more systematically, instead of just stopping at knowing how to use it. More importantly, I realize the need to thoroughly master a Cloud platform, here being AWS, accompanied by security knowledge like IAM and tools like Terraform, instead of just learning AI superficially. And no matter how complex the system is, the three words to remember are always safe, reliable, and serving the right users.
+
+### Some event photos
+
+![FCAJ Community Day 1](/images/4-EventParticipated/4.1-Event1/media__1783233714015.png)
+![FCAJ Community Day 2](/images/4-EventParticipated/4.1-Event1/media__1783233716737.png)
+![FCAJ Community Day 3](/images/4-EventParticipated/4.1-Event1/media__1783233719861.png)
+![FCAJ Community Day 4](/images/4-EventParticipated/4.1-Event1/media__1783233722968.jpg)
+
