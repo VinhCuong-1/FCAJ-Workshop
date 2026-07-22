@@ -15,6 +15,10 @@ In this workshop, you will step by step build a complete backend system for a li
 - **Web demo link:** [http://fighting-game-assets-508768431157.s3-website-ap-southeast-1.amazonaws.com/](http://fighting-game-assets-508768431157.s3-website-ap-southeast-1.amazonaws.com/)
 - **Source code link:** [https://github.com/VinhCuong-1/fighting-game-master](https://github.com/VinhCuong-1/fighting-game-master)
 
+**Test Accounts (for Admin):**
+- **Player 1:** `testplayer1` (Password: `TestPass123!`)
+- **Player 2:** `tranvinhcuong` (Password: `Cuongxuyentu098!`)
+
 #### Contents
 
 1. [User Authentication with Amazon Cognito](5.1-Cognito/)

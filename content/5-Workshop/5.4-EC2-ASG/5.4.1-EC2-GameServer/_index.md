@@ -129,5 +129,11 @@ curl http://<EC2-Public-IP>:3000/health
 
 ![Figure 98 - Connection successful](/images/5-Workshop/5.4-EC2-ASG/5.4.1/img98.png)
 
+To illustrate the local connection, the 2 players previously created are:
+- **Player 1:** tk: `testplayer1`, email: `test1@example.com`, mk: `TestPass123!`
+- **Player 2:** tk: `testplayer2`, email: `test2@example.com`, mk: `TestPass123!`
+
+![Figure - Local connection for 2 players](/images/5-Workshop/5.4-EC2-ASG/5.4.1/img3.jpg)
+
 **Result:** EC2 instance `FightingGameServer` is running successfully with the Node.js game server. This instance will be used to create an AMI in the next step.
 

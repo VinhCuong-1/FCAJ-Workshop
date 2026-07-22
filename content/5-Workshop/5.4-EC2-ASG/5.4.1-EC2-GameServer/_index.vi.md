@@ -129,5 +129,11 @@ curl http://<EC2-Public-IP>:3000/health
 
 ![Hình 98 - Kết nối thành công](/images/5-Workshop/5.4-EC2-ASG/5.4.1/img98.png)
 
+Để minh họa kết nối local, 2 player đã tạo sẵn ban đầu là:
+- **Player 1:** tk: `testplayer1`, email: `test1@example.com`, mk: `TestPass123!`
+- **Player 2:** tk: `testplayer2`, email: `test2@example.com`, mk: `TestPass123!`
+
+![Hình minh họa - Kết nối local 2 player](/images/5-Workshop/5.4-EC2-ASG/5.4.1/img3.jpg)
+
 **Kết quả:** EC2 instance `FightingGameServer` đang chạy thành công với Node.js game server. Instance này sẽ được dùng để tạo AMI ở bước tiếp theo.
 
