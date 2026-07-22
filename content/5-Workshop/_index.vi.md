@@ -16,7 +16,7 @@ Trong workshop này, các em sẽ từng bước xây dựng một hệ thống 
 - **Link mã nguồn (Source code):** [https://github.com/VinhCuong-1/fighting-game-master](https://github.com/VinhCuong-1/fighting-game-master)
 
 **Tài khoản Test (dành cho Admin):**
-- **Player 1:** `testplayer1` (Mật khẩu: `TestPass123!`)
+- **Player 1:** `tranvinhcuong1` (Mật khẩu: `Cuongxuyentu098!`)
 - **Player 2:** `tranvinhcuong` (Mật khẩu: `Cuongxuyentu098!`)
 
 #### Nội dung

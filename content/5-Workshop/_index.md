@@ -16,7 +16,7 @@ In this workshop, you will step by step build a complete backend system for a li
 - **Source code link:** [https://github.com/VinhCuong-1/fighting-game-master](https://github.com/VinhCuong-1/fighting-game-master)
 
 **Test Accounts (for Admin):**
-- **Player 1:** `testplayer1` (Password: `TestPass123!`)
+- **Player 1:** `tranvinhcuong1` (Password: `Cuongxuyentu098!`)
 - **Player 2:** `tranvinhcuong` (Password: `Cuongxuyentu098!`)
 
 #### Contents
