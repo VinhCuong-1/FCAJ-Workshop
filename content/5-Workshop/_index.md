@@ -15,7 +15,7 @@ In this workshop, you will step by step build a complete backend system for a li
 - **Web demo link:** [http://fighting-game-assets-508768431157.s3-website-ap-southeast-1.amazonaws.com/](http://fighting-game-assets-508768431157.s3-website-ap-southeast-1.amazonaws.com/)
 - **Source code link:** [https://github.com/VinhCuong-1/fighting-game-master](https://github.com/VinhCuong-1/fighting-game-master)
 
-**Test Accounts (for Admin):**
+**Created Accounts:**
 - **Player 1:** `tranvinhcuong1` (Password: `Cuongxuyentu098!`)
 - **Player 2:** `tranvinhcuong` (Password: `Cuongxuyentu098!`)
 

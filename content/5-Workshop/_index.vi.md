@@ -15,7 +15,7 @@ Trong workshop này, các em sẽ từng bước xây dựng một hệ thống 
 - **Link web demo:** [http://fighting-game-assets-508768431157.s3-website-ap-southeast-1.amazonaws.com/](http://fighting-game-assets-508768431157.s3-website-ap-southeast-1.amazonaws.com/)
 - **Link mã nguồn (Source code):** [https://github.com/VinhCuong-1/fighting-game-master](https://github.com/VinhCuong-1/fighting-game-master)
 
-**Tài khoản Test (dành cho Admin):**
+**Các tài khoản đã tạo:**
 - **Player 1:** `tranvinhcuong1` (Mật khẩu: `Cuongxuyentu098!`)
 - **Player 2:** `tranvinhcuong` (Mật khẩu: `Cuongxuyentu098!`)
 
